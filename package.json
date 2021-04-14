@@ -1,5 +1,5 @@
 {
-  "name": "sparkle",
+  "name": "sparkle-cli",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -42,5 +42,9 @@
   },
   "devDependencies": {
     "@types/moo": "^0.5.4"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": "./dist/cli.js"
 }
