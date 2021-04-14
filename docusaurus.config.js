@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "Sparkle",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://elimerl.github.io/sparkle/",
+  baseUrl: "/sparkle/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logo.svg",
