@@ -60,7 +60,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/elimerl/sparkle/edit/master/docs/",
+          editUrl: "https://github.com/elimerl/sparkle/edit/master/",
           routeBasePath: "/",
         },
         theme: {
