@@ -99,7 +99,7 @@ export class Interpreter implements ExprVisitor<LoxType>, StmtVisitor<LoxType> {
       ).parse();
       newInterp.interpret(ast);
 
-      return Object.fromEntries(newInterp.exports);
+      return fromEntries([...newInterp.exports.entries()]);
     } else {
       throw new ImportError(name);
     }
@@ -529,4 +529,10 @@ class ImportError extends Error {
   constructor(public missing: string) {
     super("Module " + missing + " not found");
   }
+}
+function fromEntries<T>(entries: [keyof T, T[keyof T]][]): T {
+  return entries.reduce(
+    (acc, [key, value]) => ({ ...acc, [key]: value }),
+    <T>{}
+  );
 }

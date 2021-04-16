@@ -105,4 +105,5 @@ from mod import MOO;
 MOO(); // MOOAOOAOOAOAOAOOAO
 ```
 
-The modules will try to be resolved to the standard library, then if that fails it will load `.sparkle` files in the same folder.
+It will load from either the standard library or .sparkle files next to the main program.
+The standard library overrides .sparkle files in the same directory, but it will show a warning if there is one.
