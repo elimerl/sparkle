@@ -38,3 +38,10 @@ test("Booleans", (t) => {
 test("Unary not", (t) => {
   t.is(interp("!true"), false);
 });
+// Strings
+test("Strings", (t) => {
+  t.is(interp('"Moo"'), "Moo");
+});
+test("Concatenating", (t) => {
+  t.is(interp('"a" + "b"'), "ab");
+});
